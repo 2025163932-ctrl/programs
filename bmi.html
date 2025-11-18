@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eddison's Programs</title>
+</head>
+<body>
+
+<h1>BMI Calculator</h1>
+
+<h2>Add to Numbers</h2>
+<input type="number" id="lbs" placeholder="Enter Your weight (Lbs)">
+<input type="number" id="Height" placeholder="Enter You Height (Inches) ">
+<button onclick="calculateBMI()"> Calculate BMi </button>
+<p> total: <span id="result"></span></p>
+<p> Result: <span id="meaning"></span></p>
+
+<script>
+    function calculateBMI() {
+        let lbs= parseFloat (document.getElementById ('lbs').value);
+        let Height= parseFloat (document.getElementById ('Height').value);
+        
+        let BMI_total=  703 * lbs / (Height * Height);
+
+        let meaning;
+        if (result < 18.5){
+            meaning = "You are under weight, please eat more";
+
+        } else if (result < 24.9 ) {
+            meaning= "You are Healthly. Great Job"
+        } else if (result < 29.9) {
+            meaning = "You are Overweight, Please eat less."
+        } else {
+            meaning = " You are Obese, Please eat less."
+        }
+    
+
+            document.getElementById ('result').textContent = BMI_total;
+            document.getElementById ('meaning').textContent = meaning;
+    }            
+</script>
+
+
