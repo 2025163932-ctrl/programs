@@ -1,0 +1,92 @@
+
+body {
+    background-color: #E0F3FF;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #0077b6;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Flex container for map + info */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* Left side (map) */
+.map-section img {
+    width: 500px;
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.map-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Right side (info + buttons) */
+.info-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info-section h3 {
+    color: #0077b6;
+    margin-top: 0;
+}
+
+/* Buttons under info */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #00b4d8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
