@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eddison's Programs</title>
+</head>
+<body>
+
+<h1>Converting c++ programs to javascript to let people view it</h1>
+
+<h2>Add to Numbers</h2>
+<p>Enter the first number <input type="number" id="num1"> </p>
+<input type="number" id="num2" placeholder="Enter second number">
+<button onclick="calculateSum()"> Calculate Sum </button>
+<p> Result: <span id="result"></span></p>
+
+<script>
+    function calculateSum() {
+        let num1= parseFloat (document.getElementById ('num1').value);
+        let num2= parseFloat (document.getElementById ('num2').value);
+        
+        let sum= num1 + num2;
+
+        document.getElementById ('result').textContent = sum;
+    }
+</script>
+
+
+
+<h2>Subtracting Two numbers</h2>
+<input type="number" id="s1" placeholder="Enter first number">
+<input type="number" id="s2" placeholder="Enter second number">
+<button onclick="calculateSub()"> Calculate difference</button>
+<p> Result: <span id="sub"></span></p>
+
+<script>
+    function calculateSub() {
+        let s1= parseFloat (document.getElementById ('s1').value);
+        let s2= parseFloat (document.getElementById ('s2').value);
+        
+        let sub= s1 - s2;
+
+        document.getElementById ('sub').textContent = sub;
+    }
+
+</script>
+
+
+<h2>Multiply Two Numbers</h2>
+<input type="number" id="T1" placeholder="Enter first number">
+<input type="number" id="T2" placeholder="Enter second number">
+<button onclick="calculateMult()"> Calculate Product </button>
+<p> Product: <span id="product"></span></p>
+
+<script>
+    function calculateMult() {
+        let T1= parseFloat (document.getElementById ('T1').value);
+        let T2= parseFloat (document.getElementById ('T2').value);
+        
+        let product= T1 * T2;
+
+        document.getElementById ('product').textContent = product;
+    }
+</script>
+
+
+
+<h2>Divide Two Numbers</h2>
+<input type="number" id="d1" placeholder="Enter first number">
+<input type="number" id="d2" placeholder="Enter second number">
+<button onclick="calculatediv()"> Calculate division of the two number </button>
+<p> division: <span id="answer"></span></p>
+
+<script>
+    function calculatediv() {
+        let d1= parseFloat (document.getElementById ('d1').value);
+        let d2= parseFloat (document.getElementById ('d2').value);
+        
+        let answer= d1 / d2;
+
+        document.getElementById ('answer').textContent = answer;
+    }
+</script>
+
+
+</body>
+</html>
